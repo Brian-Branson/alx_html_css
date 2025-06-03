@@ -1,0 +1,23 @@
+main{
+  display: flexbox;
+  flex-direction: row;
+  flex:auto;
+  background: rgb(43, 207, 141);
+}
+body {
+  display: flexbox;
+  flex-direction: column;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+html {
+  background: lightblue;
+}
