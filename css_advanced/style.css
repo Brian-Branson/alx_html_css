@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #071629;
+  background-color: #fff;
+}
+
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  height: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 22, 41, 0.6);
+  z-index: 1;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  font-size: 20px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin: 0 10px;
+}
+
+.hero button {
+  background-color: #c271ff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* Learn from pros */
+.pros {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.pros .person {
+  max-width: 150px;
+}
+
+.pros img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pros p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.pros .name {
+  font-weight: bold;
+}
+
+/* Testimonial */
+.testimonial {
+  background-color: #c271ff;
+  color: white;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Popular Tutorials */
+.tutorials {
+  padding: 80px 60px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.tutorials h2 span {
+  color: #c271ff;
+}
+
+.tutorial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: left;
+}
+
+.tutorial-card {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding-bottom: 20px;
+}
+
+.tutorial-card img {
+  width: 100%;
+}
+
+.tutorial-info {
+  padding: 20px;
+}
+
+/* Membership */
+.membership {
+  background-color: #071629;
+  color: white;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-size: 28px;
+  margin-bottom: 60px;
+}
+
+.membership h2 span {
+  color: #c271ff;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.membership .icon {
+  font-size: 40px;
+  color: #c271ff;
+  margin-bottom: 20px;
+}
+
+.membership button {
+  background-color: #c271ff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 60px;
+  background-color: #fff;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.faq-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 50px;
+}
+
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+footer .socials i {
+  margin-left: 15px;
+}
