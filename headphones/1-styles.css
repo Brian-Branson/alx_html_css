@@ -1,0 +1,102 @@
+header {
+background-image:url(/images/headphones_hero_1.jpg);
+height: 1000px;
+background-size: cover;
+color: white;
+font-family:sans-pro;
+}
+
+.logo {
+  padding-left: 50px;
+}
+li {
+  display: inline;
+  margin: 10px;
+  padding: 10px 20px 40px 30px;
+  list-style : none;
+  font-size: 20px;
+  font-style: bold;
+
+}
+li:hover {
+  color: #FF6565;
+}
+
+.hero {
+  display: block;
+  padding: 500px 75px 100px;
+  text-align: center;
+  font-size: 50px;
+}
+.call {
+  background-color: #FF6565;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 10px 20px 10px;
+  color: white;
+}
+.horn {
+  padding : 50px 150px 1080px; 
+  text-align: center;
+  font-size: 27px;
+}
+.bone {
+  padding-bottom: 50px;
+}
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0c1c2c;
+}
+
+.what-we-do > p {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  color: #0c1c2c;
+  line-height: 1.6;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon-item {
+  flex: 0 0 200px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.icon-item i {
+  font-size: 64px;
+  color: #ff5e5e;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.icon-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0c1c2c;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  font-size: 16px;
+  color: #0c1c2c;
+}
+
+main {
+  background-color: azure;
+  padding: 20px;
+}
