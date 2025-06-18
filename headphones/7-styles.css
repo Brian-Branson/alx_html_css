@@ -1,0 +1,295 @@
+header {
+  background-image: url(/images/headphones_hero_1.jpg);
+  height: 1000px;
+  background-size: cover;
+  color: white;
+  font-family: sans-pro;
+}
+
+.logo {
+  padding-left: 50px;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+  padding: 10px 20px 40px 30px;
+  list-style: none;
+  font-size: 20px;
+  font-style: bold;
+}
+
+li:hover {
+  color: #FF6565;
+}
+
+.hero {
+  display: block;
+  padding: 500px 75px 100px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.call {
+  background-color: #FF6565;
+  font-size: 30px;
+  border-radius: 50px;
+  padding: 10px 20px 10px;
+  color: white;
+  justify-items: center;
+}
+
+.horn {
+  padding: 50px 150px 1080px;
+  text-align: center;
+  font-size: 27px;
+}
+
+.bone {
+  padding-bottom: 50px;
+}
+
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.what-we-do h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0c1c2c;
+}
+
+.what-we-do > p {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  color: #0c1c2c;
+  line-height: 1.6;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.icon-item {
+  flex: 0 0 200px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon-item i {
+  font-size: 64px;
+  color: #ff5e5e;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.icon-item h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0c1c2c;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  font-size: 16px;
+  color: #0c1c2c;
+}
+
+/* Fun animation on hover for icon-item */
+.icon-item:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.8;
+}
+
+/* Add animation to "What we do" section items on page load */
+.icon-item {
+  animation: fadeInScale 1.2s ease-out forwards;
+}
+
+.icon-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.icon-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.icon-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.icon-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Keyframes for fadeIn and scale animation */
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.8) rotate(10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+main {
+  background-color: azure;
+  padding: 20px;
+}
+
+.our-results {
+  text-align: center;
+  padding: 60px 20px 60px;
+  background-image: url(/images/headphones_hero_2.jpg);
+  color: azure;
+  font-size: 20px;
+  height: 500px;
+  background-size: cover;
+}
+
+.results-text {
+  padding: 40px 460px 40px;
+  font-size: 20px;
+}
+
+.results-grid {
+  position: relative;
+  display: inline-block;
+  padding: 40px 5px 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Fun animation on hover for results-grid */
+.results-grid:hover {
+  transform: scale(1.05) rotate(-3deg);
+  opacity: 0.9;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.results {
+  width: 50%;
+  height: auto;
+}
+
+.image-text2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+}
+
+/* Add animation to "Our results" section items on page load */
+.results-grid {
+  animation: fadeInResults 1.2s ease-out forwards;
+}
+
+.results-grid:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.results-grid:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.results-grid:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.results-grid:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Keyframes for fadeIn and scale animation for results */
+@keyframes fadeInResults {
+  0% {
+    transform: scale(0.8) rotate(10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.contact .call {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  text-align: center;
+}
+
+footer {
+  background-color: #0c1c2c;
+  color: white;
+  padding: 20px;
+}
+
+.footer-logo {
+  text-align: left;
+  padding: 20px;
+  width: 10%;
+  height: auto;
+}
+
+.footer-text {
+  display: inline-block;
+  text-align: left;
+  padding: 20px 20px 20px;
+}
